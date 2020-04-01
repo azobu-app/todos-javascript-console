@@ -64,11 +64,11 @@ const addTodo = () => {
   const newTodoText = prompt('What do you want to do?')
 
   if (newTodoText) {
-    const currentId = store.nextTodoId + 1
+    const id = store.nextTodoId
     store.nextTodoId++
 
     store.todos.push({
-      id: currentId,
+      id: id,
       text: newTodoText,
       tags: [],
       isFavorited: false,
@@ -77,6 +77,7 @@ const addTodo = () => {
       updatedAt: new Date(),
       dueAt: new Date()
     })
+
     return true
   } else {
     return false

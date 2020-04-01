@@ -1,5 +1,5 @@
 let store = {
-  nextTodoId: 3,
+  nextTodoId: 4,
   todos: [
     {
       id: 1,
