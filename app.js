@@ -101,7 +101,7 @@ const searchText = textToSearch => {
 // -----------------------------------------------------------------------------
 
 const deleteById = idToDelete => {
-  console.log('DELETE TODO BY ID:')
+  console.log(`DELETE TODO BY ID: ${idToDelete}`)
 
   if (idToDelete === undefined) return
   if (typeof idToDelete === 'string') return
@@ -119,7 +119,7 @@ const deleteById = idToDelete => {
 // -----------------------------------------------------------------------------
 
 const toggleFavoriteById = idToFavorite => {
-  console.log('FAVORITE TODO BY ID:')
+  console.log(`FAVORITE TODO BY ID: ${idToFavorite}`)
 
   if (idToFavorite === undefined) return
   if (typeof idToFavorite === 'string') return
