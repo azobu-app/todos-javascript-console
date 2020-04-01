@@ -108,7 +108,7 @@ const deleteById = idToDelete => {
 
   const newTodos = store.todos.filter((todo, index) => {
     if (todo.id !== idToDelete) {
-      console.log('Todo deleted')
+      console.log(`TODO DELETED BY ID: ${idToDelete}`)
       return todo
     }
   })
